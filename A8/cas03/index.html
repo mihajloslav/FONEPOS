@@ -1,0 +1,82 @@
+<!--! ili html:5 - precice za ggenerisanje osnovne strukture HTML dokuemnta-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--. code otvori trenutnu lokaciju localhost:port/folder-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forme</title>
+</head>
+<body>
+    <h1>Upit katedri</h1>
+    <form action="">
+        <!-- INPUT tagovi-->
+        <!--1. input tipa text -->
+
+        <!--<p>Ime i prezime:</p>-->
+        <label for="imePrezime">Ime i prezime:</label>
+        <input type="text" size="25" placeholder="Unesite svoje ime i prezime..." maxlength="30" minlength="5" id="imePrezime" value="Ime i prezime">
+        <br><br><br>
+        <!--size je duzina koje je vidljiva korisniku-->
+        <!--2. input tipa pasword -->
+
+        <label for="sifra">Sifra:</label>
+        <input type="password" required autofocus placeholder="Unesite svoju sifru..." size="30" id="sifra">
+        <br><br><br>
+        <!--required i autofocus-podrezumeva da prilikom ulaska na stanicu on bude fokusiran-->
+
+        <!-- 3.input tipa radio-->
+        <!--input:radio-->
+        <label for="">Godina studija:</label>
+        <!--Crtl c na kraju i onda u novi red paste-->
+        <label for="god">Godina studija:</label>
+        <br>
+        <input type="radio" name="godina" id="god" value="prva">Prva godina 
+        <br>
+        <input type="radio" name="godina" id="" value="druga">Druga godina 
+        <br>
+        <input type="radio" name="godina1" id="" value="treca" checked>Treca godina
+        <br>
+        <input type="radio" name="godina1" value="cetvrta" id="">Cetvrta godina
+        <br><br>
+        <!--ukoliko se ne dodeli name moze da se selekujte vise-->
+        <!--SHIFT ALT strelica_na_dole - precica za kopiranje celog reda u red ispod-->
+
+        <!-- 4. input tipa checkbox-->
+        <label for="">Razlog upita: </label> 
+        <br><br>
+        <input type="checkbox" name="" id=""> Nastava
+        <br>
+        <input type="checkbox" name="" id="" checked> Projekti
+        <br>
+        <input type="checkbox" name="" id=""> Gostujuca predavanja
+        <br><br>
+
+        <!-- 5. tag textarea-->
+        <label for="upit">Vas upit je: </label>
+        <br>
+        <textarea id="upit" rows="10" cols="25"></textarea>
+        <br><br>
+        <!-- 6. padajuci meni - dropdown menu -->
+
+        <label for="smer">Smer:</label>
+        <select name="" id="smer">
+            <optgroup label="Inform. sistemi i tehnologije"> <!--kada zelimo da grupisemo opcije -->
+                <option value="">ISIT</option>
+                <option value="" selected>ISIT - daljina</option>
+            </optgroup>
+            <optgroup label="Menadzment smerovi" disabled> <!--sa disabled se onemogucuje-->
+                <option value="">Menadzment</option>
+            </optgroup>
+        </select>
+        <br><br><br>
+        <!--sa selected postavljamo da ta opcija bude prvo prikazana-->
+        <!-- 7. input tipa submit, input tipa reset-->
+        <input type="submit" value="Posalji upit">
+        <input type="reset" value="Resetuj formu">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </form>
+</body>
+</html>
