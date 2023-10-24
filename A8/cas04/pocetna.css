@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+    color:white;
+}
+.meni{
+    background-color: rgb(247, 97, 157);
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color:white
+}
+/*inline pa interni pa externi*/
