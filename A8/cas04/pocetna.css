@@ -1,14 +1,18 @@
 *{ /*selektuje sve*/
     margin: 0; /*Udaljenost izmedju elementa i ostalih elemenata na stanici*/
     padding: 0; /*Udaljenost izmedju sadrzaja elemenata i ivice tog elementa*/
+    box-sizing: border-box; /*da uracuna padding i border u sirinu i visinu*/
+    margin: 10px
 }
 header {
     text-align: center;
-    color:white;
+    padding: 20px;
+    border: 5px dashed black;
 }
 .meni{
     background-color: rgb(247, 97, 157);
     text-align: center;
+    padding:10px
 }
 
 nav ul{
@@ -21,10 +25,41 @@ nav a{
 }
 
 nav li{
-    display: inline;
+    display: inline; /*uzima sirinu onoliku koliki je*/
+    margin:0 10px; /*levo i desno*/
 }
 
 h3#naslov1{
     border-bottom: 1px solid black;
+}
+.sekcija1{
+    background-color: aquamarine;
+    padding:10px;
+    height: 300px;
+    /*width: 200px;*/
+}
+.sekcija2{
+    background-color: bisque;
+    border: 5px solid black;
+    padding:10px;
+    border:10px;
+    /*width:200px;*/
+}
+
+footer{
+    background-color: rgb(162, 162, 220);
+    text-align: center;
+    padding:10px;
+    margin:10px;
+    height: 80px;
+}
+#sidebar{
+    background-color: rgb(247, 90, 90);
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
 }
 /*inline pa interni pa externi*/
