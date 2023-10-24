@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!--  ! pa enter-->
+<html lang="en">
+<!-- informacije koje nisu vidljive na sajtu korisnicima -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A8 - cas 02</title>
+</head>
+<!-- sadrzaj vidljiv na sajtu -->
+<body>
+    <!-- tag za paragrafe/text - p -->
+    <h1>Prvi cas - HTML</h1>
+    <h2>Paragrafi</h2>
+    <p>Ovo je moj prvi paragraf.</p>
+    <p>Lorem, ipsum dolor sit amet <br/> consectetur adipisicing elit. Rerum voluptatibus quis hic, autem ipsa est eius molestias quo doloremque distinctio iure neque nulla? Recusandae tempore exercitationem eos, maiores dignissimos repudiandae.</p>
+    <hr/>
+
+    <!-- Tagovi za stilizovanje -->
+    <!-- Neki komentar..... -->
+    <h2>Tagovi za stilizovanje</h2>
+    <b>Ovo je bold tekst.</b> <br/>
+    <i>Ovo je italic tekst.</i> <br/>
+    <u>Ovo je podvucen tekst.</u> <br/>
+    <strong>Ovo je strong tag.</strong>
+    <hr/>
+
+    <!-- Tagovi za naslove -->
+    <h2>Tagovi za naslove</h2>
+    <h1>Ovo je naslov H1.</h1>
+    <h2>Ovo je naslov H2.</h2>
+    <h6>Ovo je naslov H6</h6>
+
+    <hr/>
+
+    <!-- Tag za sliku -->
+    <img src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg" alt="zuti cvet">
+    <img src="folder2/cvet.jpg" alt="ljubicasti cvet"> <!-- ../img/nesto da se vratimo u nazad-->
+    <img src="" alt="">
+    <hr/>
+
+    <h2>Liste</h2>
+    <!--U HTML-u postoje dve vrste lista:-->
+    <!-- 1. uredjene liste - ordered list -->
+    <!-- 2. neuredjene liste - unordered list -->
+    <h3>Uredjene liste</h3>
+    <ol>
+        <!-- list item -->
+        <li>Prva stavka</li>
+        <ul>
+            <li>prva prva</li>
+        </ul>
+        <li>Druga stavka</li>
+        <li>Treca stavka</li>
+    </ol>
+    <h3>Neuredjene liste</h3>
+    <ul>
+        <li><b>Stavka 1</b></li>
+        <li>Stavka 2</li>
+        <li>Stavka 3</li>
+    </ul>
+    <!-- br*15 -->
+    <hr/>
+    <h2>Tag za linkove</h2>
+    <a href="https://moodle.elab.fon.bg.ac.rs/" target="_blank">Ovo je link.</a>
+    <hr/>
+
+    <h2>Tabele</h2>
+    <table border="1">
+        <!-- tableRow - tr-->
+        <!-- thead semanticki kazes da je ovo zaglavlje-->
+        <thead>
+            <tr>
+                <th>Naziv</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- tableData - td-->
+                <td colspan="2">Prvi red prva kolona</td>
+                <!-- <td>Prvi red druga kolona</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">Drugi red prva kolona</td>
+                <td>Drugi red druga kolona</td>
+            </tr>
+            <tr>
+                <td>Treci red prva kolona</td>
+                <td>Treci red druga kolona</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot></tfoot> -->
+    </table>
+</body>
+</html>
