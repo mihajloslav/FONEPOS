@@ -1,3 +1,7 @@
+*{ /*selektuje sve*/
+    margin: 0; /*Udaljenost izmedju elementa i ostalih elemenata na stanici*/
+    padding: 0; /*Udaljenost izmedju sadrzaja elemenata i ivice tog elementa*/
+}
 header {
     text-align: center;
     color:white;
@@ -10,8 +14,17 @@ header {
 nav ul{
     list-style: none;
 }
+
 nav a{
     text-decoration: none;
-    color:white
+    color:white;
+}
+
+nav li{
+    display: inline;
+}
+
+h3#naslov1{
+    border-bottom: 1px solid black;
 }
 /*inline pa interni pa externi*/
