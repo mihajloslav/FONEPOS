@@ -1,5 +1,5 @@
 *{ /*selektuje sve*/
-    margin: 0; /*Udaljenost izmedju elementa i ostalih elemenata na stanici*/
+    margin: 0; /*Udaljenost izmedju elementa i ostalih elemenata na stranici*/
     padding: 0; /*Udaljenost izmedju sadrzaja elemenata i ivice tog elementa*/
     box-sizing: border-box; /*da uracuna padding i border u sirinu i visinu*/
     margin: 10px
@@ -25,7 +25,7 @@ nav a{
 }
 
 nav li{
-    display: inline; /*uzima sirinu onoliku koliki je*/
+    display: inline; /*uzima sirinu tacno onoliko koliki je*/
     margin:0 10px; /*levo i desno*/
 }
 
