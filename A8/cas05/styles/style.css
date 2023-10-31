@@ -1,0 +1,25 @@
+/*position: static je default*/
+.dugme{
+    position: fixed; /*iznad ostalih je*/
+    z-index: 1;
+    right: 20px;
+    bottom: 90px;
+}
+.proizvod{
+    background-color:rgb(163, 195, 255);
+    position: relative;
+}
+.proizvod2.proizvod{
+    background-color: rgb(157, 255, 190);
+    position: relative;
+    left:20px;
+    top:30px;
+}
+.dodaj{
+    position: absolute;
+    right: 20px;
+    bottom:20px;
+}
+header h1, header h4{
+    display: inline;
+}

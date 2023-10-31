@@ -1,0 +1,26 @@
+.roditelj{
+    background-color: blueviolet;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 400px;
+    justify-content: space-around;/*pomeranj uz horizontalnu osu*/
+    align-items: flex-end;/*vertikalno*/
+    align-content: flex-end;/*isto kao align items ali kad imas vise redova*/
+}
+.dete{
+    background-color: orange;
+    width: 200px;
+    display:none;
+    flex-shrink:initial;
+    /*align-self: flex-start;*/
+}
+.proizvod1{
+    order: 2;
+    /*flex-grow: 1;proizvod 3 i 1 se sire u razmeri 2:1*/
+}
+.proizvod3{
+    /*flex-grow: 2;siri se duplo vise*/
+    /*align-self: flex-end; poravnanje uz donju ivicu*/
+}
