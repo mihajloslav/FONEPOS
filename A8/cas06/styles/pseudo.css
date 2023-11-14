@@ -1,0 +1,46 @@
+/* Pseudo klase i pseudo elementi*/
+/*crtl + space za puskice*/
+/* :last-child*/
+main div:first-child{ /*prvo dete unutar maina koji je div*/
+    font-size: 120%;
+    font-weight: bold;
+}
+
+a:link{ /*linkovi za koje nismo kliknuli*/
+    color:blue
+}
+a:visited{ /*nakon sto je link posecen*/
+    color: purple;
+}
+.post:hover{ /*kada mis prelazi*/  
+    cursor: pointer ; /*kakaf kursor ce da bude*/
+    transform: skew(-15deg); /*da se iskosi, x pa y*/ 
+}
+
+.dugme:hover{ /*kada mis prelazi*/  
+    cursor: pointer ; /*kakaf kursor ce da bude*/
+}
+
+.forma{
+    background-color: lightgrey;
+    padding: 15px 300px; /*prva na gornju i donju, desnu i levu*/
+}
+
+.forma input:focus{/*:focus da se nalazimo unutar nekog input polja*/
+    background-color: lightblue;
+}
+
+/*pseudo elementi*/
+/*pseudo klase da se targetuje stanje*/
+/*pseudo elements da se targetuje odredjeni deo elemnta*/
+/* ::beofre pre elementa koji je selektovan*/
+/* ::after posle elementa koji je selektovan*/
+.forma label::after{/*svako polje koje je obavezno da ga promeni*/
+    content:"*";
+    color:red;
+}
+/* ::first-line*/
+.post p::first-letter{
+    font-size: 200%;
+    font-weight: bold;
+}

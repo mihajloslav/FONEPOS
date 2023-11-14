@@ -1,0 +1,52 @@
+/*Animacije*/
+.post{
+    background-color: yellow;
+    width: 350px;
+    animation-name: animacija;
+    animation-duration: 2s;/*koliko traje*/
+    animation-iteration-count: 2; /*koliko puta se ponavlja*/
+    animation-fill-mode: forwards; /*da li ce da se promeni na kraju*/
+    /*u kom smeru se krece animacija*/
+
+    animation-direction: reverse; /*animacija ide u suprotnom smeru*/
+    /*alternate - malo napred malo nazad*/
+    /*alternate - krece obrnuto i ide naizmenicno*/
+}
+/*@keyframes je dekorat*/
+@keyframes animacija {
+    /*odavde krece*/
+    from{ 
+        background-color: yellow;
+    }
+    50%{
+        background-color: lightgreen;
+    }
+    /*ovde se zavrsava*/
+    to{
+        background-color: lightblue;
+    }
+}
+.dugme{
+    position: fixed;
+    right: 70px;
+    bottom: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: pulsira;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s; /*krece posle 3 sekunde*/
+}
+
+@keyframes pulsira {
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.3, 1.3);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
