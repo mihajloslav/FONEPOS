@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*u visinu i sirinu se racunaju ivice i padding*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    background-color: rgb(7, 5 ,8);
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav .menu{
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; /*1000px*/
+    margin: auto;
+}
+.menu ul{
+    display: inline-flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+
+}
+
+.menu ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img{
+    background-image: url('../img/home.jfif');
+    /*viewpoert height-zauzece 85% od viewporta u pregledacu*/
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.buttons{
+    position: absolute;
+    top:45%;
+    left: 39%;
+}
+.buttons button{
+    background-color: rgb(7, 5, 8);
+    height: 100px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+
+}
+.buttons button a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttons button:hover{
+    border: 2px solid white;
+}
